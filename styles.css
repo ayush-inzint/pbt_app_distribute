@@ -109,6 +109,36 @@ body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
+.logo-container {
+  width: 20vw;
+  /* Adjust the width to 20% of the viewport width */
+  height: auto;
+  /* Maintain the aspect ratio */
+  max-width: 150px;
+  /* Set a maximum width */
+  max-height: 150px;
+  /* Set a maximum height */
+  border-radius: 12px;
+  /* Optional: Rounded corners */
+  overflow: hidden;
+  /* Ensure the image doesn't overflow */
+  display: flex;
+  /* Center the image */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* Add some space below the logo */
+}
+
+.company-logo {
+  width: 100%;
+  /* Make the image fill the container */
+  height: auto;
+  /* Maintain the aspect ratio */
+  object-fit: contain;
+  /* Best fit without cropping */
+}
+
 .modal-btn {
   padding: 0.75rem;
   margin: 0.5rem 0;
