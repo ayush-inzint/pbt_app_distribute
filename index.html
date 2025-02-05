@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Download Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="download-card">
+            <div class="logo-container">
+                <!-- Replace with your company logo -->
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3x2Po7Cdy8dfJUxgc3Cal27yHSbFWF.png" alt="Company Logo" class="company-logo">
+            </div>
+
+            <div class="app-info">
+                <h1 class="app-name">App Name</h1>
+                <div class="version-info">
+                    <p>Version <span id="app-version"></span></p>
+                    <p>Release Date: <span id="release-date"></span></p>
+                    <p>Size: <span id="app-size"></span></p>
+                </div>
+            </div>
+
+            <button class="download-button" id="download-btn">
+                <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Download APK
+            </button>
+
+            <p class="disclaimer">
+                By downloading, you agree to our Terms of Service and Privacy Policy
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
