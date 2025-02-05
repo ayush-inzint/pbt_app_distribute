@@ -1,0 +1,26 @@
+name: Update App Details
+
+on:
+  repository_dispatch:
+    types: [update_app_details]
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update appDetails.json
+      run: |
+        echo '${{ toJson(github.event.client_payload) }}' > appDetails.json
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add appDetails.json
+        git commit -m "Updated app details via form submission"
+        git push origin main
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
